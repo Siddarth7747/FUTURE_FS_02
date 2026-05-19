@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini CRM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Client Lead Management System</h1>
+
+<div class="form-box">
+
+<input type="text" id="name" placeholder="Client Name">
+
+<input type="email" id="email" placeholder="Client Email">
+
+<input type="text" id="source" placeholder="Lead Source">
+
+<input type="text" id="status" placeholder="Status">
+
+<textarea id="notes" placeholder="Follow-up Notes"></textarea>
+
+<button onclick="addLead()">Add Lead</button>
+
+</div>
+
+<div id="leadList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<body>
+
+<div class="container">
+
+<h1>Client Lead Management System</h1>
+
+<div class="stats">
+
+<div class="card">
+<h2 id="totalLeads">0</h2>
+<p>Total Leads</p>
+</div>
+
+<div class="card">
+<h2 id="newLeads">0</h2>
+<p>New Leads</p>
+</div>
+
+<div class="card">
+<h2 id="convertedLeads">0</h2>
+<p>Converted</p>
+</div>
+
+</div>
+
+<div class="form-box">
+
+<input type="text" id="name" placeholder="Client Name">
+
+<input type="email" id="email" placeholder="Client Email">
+
+<input type="text" id="source" placeholder="Lead Source">
+
+<select id="status">
+<option value="New">New</option>
+<option value="Contacted">Contacted</option>
+<option value="Converted">Converted</option>
+</select>
+
+<textarea id="notes" placeholder="Follow-up Notes"></textarea>
+
+<button onclick="addLead()">Add Lead</button>
+
+</div>
+
+<div id="leadList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
